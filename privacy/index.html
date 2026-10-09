@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سياسة الخصوصية — قلم | Qalam Privacy Policy</title>
+<meta name="description" content="سياسة الخصوصية لتطبيق «قلم» لأولياء الأمور والطلاب ولوحة المدارس: البيانات التي نعالجها، وأغراضها، ومزوّدو الخدمة، ومدة الحفظ، وطلب الحذف. Privacy policy of the Qalam app by AcS.">
+<link rel="canonical" href="https://abdalrzakacs.github.io/qalam-web/privacy/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#1C3667">
+<style>
+@font-face{font-family:"Plex Arabic";src:url("../fonts/IBMPlexSansArabic-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Plex Arabic";src:url("../fonts/IBMPlexSansArabic-Bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+:root{--navy:#1C3667;--blue:#2F62C9;--light:#D6E9FF;--green:#8DC63F;--ink:#18212F;--text:#334155;--muted:#5D6A7D;--rule:#DCE3ED;--wash:#F3F8FE}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:16px}
+body{margin:0;background:#fff;color:var(--text);font:400 17px/1.95 "Plex Arabic",system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;overflow-wrap:break-word}
+[lang="en"]{font-size:16.5px;line-height:1.72}
+h1,h2,h3{color:var(--navy);font-weight:700;margin:0}
+p{margin:0 0 .85em}
+ul,ol{margin:0 0 .85em;padding:0}
+a{color:var(--blue);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.24em}
+a:hover{color:var(--navy)}
+a:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:2px}
+b,strong{color:var(--ink);font-weight:700}
+.ltr{direction:ltr;unicode-bidi:isolate}
+.wrap{width:100%;max-width:1060px;margin-inline:auto;padding-inline:20px}
+.bar{border-bottom:1px solid var(--rule)}
+.bar .wrap{display:flex;align-items:center;gap:14px;min-height:70px}
+.brand{display:inline-flex;align-items:center;gap:10px;color:var(--navy);text-decoration:none;font-weight:700;font-size:24px;line-height:1}
+.brand img{height:40px;width:auto;display:block}
+.brand b{color:var(--green)}
+.brand:hover{color:var(--navy)}
+.switch{margin-inline-start:auto;font-size:15px;font-weight:700;color:var(--navy);text-decoration:none;border-bottom:1px solid var(--navy);padding-bottom:2px;line-height:1.4}
+.switch:hover{color:var(--blue);border-color:var(--blue)}
+.head{padding-block:52px 30px}
+.rule-accent{display:block;width:56px;height:3px;background:var(--green);margin-bottom:20px}
+.kicker{font-size:14.5px;color:var(--blue);font-weight:700;margin-bottom:10px}
+.head h1{font-size:clamp(27px,4.4vw,42px);line-height:1.4;max-width:30ch}
+[lang="en"] .head h1{line-height:1.2;letter-spacing:-.01em}
+.meta{margin:18px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:4px 26px;font-size:15px;color:var(--muted)}
+.meta b{color:var(--ink)}
+.lede{margin-top:22px;max-width:66ch;font-size:18px;line-height:1.9;color:var(--ink)}
+[lang="en"] .lede{font-size:17.5px;line-height:1.65}
+.toc{border-top:2px solid var(--navy);padding-top:16px;margin-bottom:34px}
+.toc h2{font-size:15px;color:var(--muted);margin-bottom:6px}
+.toc ol{list-style:none;columns:2 250px;column-gap:44px;margin:0}
+.toc li{break-inside:avoid;border-bottom:1px solid var(--rule)}
+.toc a{display:block;padding:9px 0;color:var(--ink);text-decoration:none;font-size:16px;line-height:1.6}
+.toc a:hover{color:var(--blue)}
+.sec{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;border-top:1px solid var(--rule);padding-block:30px}
+.sec h2{font-size:20px;line-height:1.55}
+[lang="en"] .sec h2{font-size:19px;line-height:1.35}
+.body{max-width:70ch}
+.body>:last-child{margin-bottom:0}
+.rows{margin:0 0 .85em}
+.rows>div{border-top:1px solid var(--rule);padding-block:14px}
+.rows>div:first-child{border-top:0;padding-top:2px}
+.rows>div:last-child{padding-bottom:0}
+.rows dt{color:var(--ink);font-weight:700;margin-bottom:3px}
+.rows dd{margin:0}
+.rows dd>:last-child{margin-bottom:0}
+.list{list-style:none}
+.list li{position:relative;padding-inline-start:22px;margin-bottom:.5em}
+.list li::before{content:"";position:absolute;inset-inline-start:2px;top:.82em;width:7px;height:7px;background:var(--green)}
+[lang="en"] .list li::before{top:.66em}
+.list li:last-child{margin-bottom:0}
+.list+p,.rows+p{margin-top:.85em}
+.steps{list-style:none;counter-reset:step;margin:0 0 .85em}
+.steps>li{counter-increment:step;display:grid;grid-template-columns:38px minmax(0,1fr);border-top:1px solid var(--rule);padding-block:16px}
+.steps>li:first-child{border-top:0;padding-top:2px}
+.steps>li::before{content:counter(step);color:var(--navy);font-weight:700;font-size:21px;line-height:1.45}
+.steps b{display:block;margin-bottom:2px}
+.cta{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;font-weight:700;font-size:16px;line-height:1.5;padding:11px 20px;border-radius:6px;margin-top:6px}
+.cta:hover{background:var(--blue);color:#fff}
+.note{background:var(--wash);border-inline-start:3px solid var(--green);padding:14px 18px;color:var(--ink);margin:0 0 .85em}
+.path{white-space:nowrap;color:var(--ink);font-weight:700}
+.en{border-top:3px solid var(--navy);margin-top:34px;background:linear-gradient(var(--wash),#fff 300px)}
+.en .bar-en{display:flex;align-items:center;gap:14px;min-height:56px;border-bottom:1px solid var(--rule)}
+.en .bar-en span{font-size:14.5px;color:var(--muted);font-weight:700}
+.en .switch{font-size:15px}
+.foot{border-top:1px solid var(--rule);margin-top:26px;padding-block:28px 40px;color:var(--muted);font-size:15px;line-height:1.7}
+.foot-in{display:grid;grid-template-columns:minmax(0,1fr);gap:10px 48px}
+.foot nav{display:flex;flex-wrap:wrap;gap:6px 24px}
+.foot [lang="en"]{font-size:inherit;line-height:inherit}
+.foot a{color:var(--ink);text-decoration:none}
+.foot a:hover{color:var(--blue);text-decoration:underline}
+.foot a[aria-current="page"]{color:var(--blue);font-weight:700}
+.foot .copy{margin:8px 0 0}
+@media (min-width:880px){
+  .sec{grid-template-columns:236px minmax(0,1fr);gap:52px;padding-block:34px}
+  .rows>div{display:grid;grid-template-columns:190px minmax(0,1fr);gap:24px}
+  .rows dt{margin-bottom:0}
+  .foot-in{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .foot .copy{grid-column:1/-1}
+}
+@media (max-width:560px){
+  body{font-size:16.5px}
+  .head{padding-block:34px 22px}
+  .lede{font-size:17px}
+  .sec{padding-block:24px}
+  .brand{font-size:22px}
+  .brand img{height:36px}
+}
+@media print{
+  .switch,.toc,.foot nav{display:none}
+  body{font-size:11.5pt}
+  .en{background:none}
+  a{color:inherit}
+}
+</style>
+</head>
+<body id="top">
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="قلم — الصفحة الرئيسية">
+      <img src="../brand/qalam-logo.png" alt="" width="24" height="40">
+      <span>قلم<b>.</b></span>
+    </a>
+    <a class="switch" href="#en" hreflang="en" lang="en">English</a>
+  </div>
+</header>
+
+<main>
+<article id="ar" lang="ar" dir="rtl">
+  <div class="wrap">
+    <header class="head">
+      <span class="rule-accent" aria-hidden="true"></span>
+      <p class="kicker">قلم · AcS</p>
+      <h1>سياسة الخصوصية لتطبيق قلم ومنصّته</h1>
+      <ul class="meta">
+        <li>تاريخ السريان: <b>8 تشرين الأول 2026</b></li>
+        <li>الجهة المطوّرة: <b>AcS</b></li>
+        <li>البريد: <a class="ltr" href="mailto:info@qalamsy.com">info@qalamsy.com</a></li>
+      </ul>
+      <p class="lede">تنطبق هذه السياسة على تطبيق «قلم» لأولياء الأمور والطلاب على أندرويد وآيفون، وعلى لوحة «قلم» التي يعمل عليها كادر المدرسة من المتصفح، وعلى صفحات الموقع العام، وتبيّن البيانات التي نعالجها والغرض منها، ومن يطّلع عليها، ومدة حفظها، وطريقة طلب حذفها.</p>
+    </header>
+
+    <nav class="toc" aria-labelledby="toc-ar">
+      <h2 id="toc-ar">محتويات السياسة</h2>
+      <ol>
+        <li><a href="#who">الجهة المطوّرة والمشغّلة</a></li>
+        <li><a href="#roles">دور المدرسة ودور AcS</a></li>
+        <li><a href="#data">البيانات التي نعالجها</a></li>
+        <li><a href="#limits">حدود استخدام البيانات</a></li>
+        <li><a href="#purposes">أغراض استخدام البيانات</a></li>
+        <li><a href="#providers">مزوّدو الخدمة</a></li>
+        <li><a href="#transfer">نقل البيانات خارج سورية</a></li>
+        <li><a href="#security">حماية البيانات</a></li>
+        <li><a href="#retention">مدة الاحتفاظ بالبيانات</a></li>
+        <li><a href="#children">الأطفال والطلاب</a></li>
+        <li><a href="#rights">حقوقك وخياراتك</a></li>
+        <li><a href="#changes">تعديل هذه السياسة</a></li>
+        <li><a href="#contact">التواصل</a></li>
+      </ol>
+    </nav>
+
+    <section class="sec" id="who" aria-labelledby="who-h">
+      <h2 id="who-h">الجهة المطوّرة والمشغّلة</h2>
+      <div class="body">
+        <p>«قلم» منصة لإدارة المدارس والمعاهد الخاصة في سورية، تطوّرها AcS وتشغّلها. وحيثما ورد في هذه السياسة «نحن» أو «فريق قلم» فالمقصود AcS.</p>
+        <dl class="rows">
+          <div><dt>اسم التطبيق</dt><dd>قلم</dd></div>
+          <div><dt>المطوّر والمشغّل</dt><dd>AcS</dd></div>
+          <div><dt>البريد الإلكتروني</dt><dd><a class="ltr" href="mailto:info@qalamsy.com">info@qalamsy.com</a></dd></div>
+          <div><dt>الموقع</dt><dd><a class="ltr" href="../">abdalrzakacs.github.io/qalam-web</a></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="sec" id="roles" aria-labelledby="roles-h">
+      <h2 id="roles-h">دور المدرسة ودور AcS</h2>
+      <div class="body">
+        <p>تشترك المدرسة في «قلم» لتنظيم عملها، ثم تنشئ إدارتها حسابات أولياء الأمور والطلاب وتُدخل بيانات الطلاب وسجلاتهم.</p>
+        <p>المدرسة مسؤولة عن البيانات التي تُدخلها وعن دقتها، وعن إعلام أولياء الأمور بأنها تستخدم «قلم» وتعريفهم بهذه السياسة. وتعالج AcS هذه البيانات نيابةً عن المدرسة ووفق تعليماتها، لتشغيل الخدمة لتلك المدرسة دون سواها.</p>
+        <p>الطلبات المتعلقة بسجلات الطالب، كتصحيح علامة أو حذف سجل، تُوجَّه إلى إدارة المدرسة أولاً، ونعاونها نحن على تنفيذها.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="data" aria-labelledby="data-h">
+      <h2 id="data-h">البيانات التي نعالجها</h2>
+      <div class="body">
+        <dl class="rows">
+          <div>
+            <dt>بيانات الحساب</dt>
+            <dd>
+              <p>الاسم الكامل، والبريد الإلكتروني المستخدم في الدخول، ورقم الهاتف إن سجّلته المدرسة، ونوع الحساب (ولي أمر أو طالب أو أحد أفراد الكادر)، والمدرسة التي يتبع لها. ولحساب ولي الأمر: الأبناء المرتبطون به وصلة القرابة.</p>
+              <p>تُحفظ كلمة المرور لدى خدمة المصادقة بصيغة مُعمّاة لا يمكن قراءتها، ويُطلب من المستخدم تعيين كلمة مرور خاصة به عند أول دخول.</p>
+            </dd>
+          </div>
+          <div>
+            <dt>بيانات الطالب الأساسية</dt>
+            <dd>الاسم، والجنس، وتاريخ الميلاد إذا أدخلته المدرسة، والصف والشعبة، والعام الدراسي.</dd>
+          </div>
+          <div>
+            <dt>السجلات الدراسية</dt>
+            <dd>الحضور والغياب والتأخر والمغادرة مع ملاحظاتها، والعلامات ونتائج التقييمات، ونقاط السلوك وملاحظاته التي تقرر المدرسة إظهارها للأهل، والواجبات، ومواعيد الامتحانات، والبرنامج الأسبوعي بما فيه أسماء المعلمين. يدخل كادر المدرسة هذه السجلات من لوحة الويب، ويعرضها التطبيق لولي الأمر والطالب للاطلاع فقط.</dd>
+          </div>
+          <div>
+            <dt>سجلات الأقساط المدرسية</dt>
+            <dd>القسط المطلوب لكل فصل وعملته، والدفعات بمبالغها وتواريخها وطريقة الدفع والرقم المرجعي للعملية، كما تسجّلها المدرسة. تظهر هذه السجلات في التطبيق لولي الأمر وحده. يُدفع القسط للمدرسة مباشرة خارج التطبيق، والتطبيق لا يطلب بيانات بطاقة أو حساب مصرفي أو محفظة إلكترونية أو يحفظها.</dd>
+          </div>
+          <div>
+            <dt>الإشعارات</dt>
+            <dd>الإشعارات التي ترسلها المدرسة إلى الحساب: إشعارات الغياب والتأخر، وتصل تلقائياً عند تسجيلهما، والإعلانات وتذكيرات الأقساط والامتحانات التي يرسلها الكادر من لوحة الويب. ويُحفظ وقت قراءة كل إشعار ليظهر مقروءاً على أجهزتك.</dd>
+          </div>
+          <div>
+            <dt>البيانات التقنية</dt>
+            <dd>
+              <ul class="list">
+                <li>جلسة الدخول، وتُحفظ على الجهاز كي لا يُطلب تسجيل الدخول في كل مرة، وتُزال عند تسجيل الخروج.</li>
+                <li>على آيفون وحده، وبعد أن يسمح المستخدم بالإشعارات: رمز الجهاز الخاص بخدمة إشعارات Apple، ويُحفظ مرتبطاً بالحساب لإيصال الإشعارات إلى ذلك الجهاز.</li>
+                <li>اسم نظام التشغيل وإصداره، ويرسلهما التطبيق مع طلباته إلى الخادم ضمن بيانات الاتصال المعتادة.</li>
+                <li>سجلات الخادم، ومنها عنوان IP ووقت الطلب ونوع التطبيق أو المتصفح، ويحتفظ بها مزوّد الاستضافة لأغراض الأمان والتشغيل.</li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>سجل التدقيق</dt>
+            <dd>عند إدخال العلامات أو تعديلها، وعند تعديل سجلات الحضور والسلوك، وعند تسجيل دفعات اشتراك المدرسة في المنصة، يُحفظ من أجرى العملية ومتى، مع القيمة قبلها وبعدها، حمايةً للسجل الرسمي للمدرسة.</dd>
+          </div>
+          <div>
+            <dt>بيانات انضمام المدارس</dt>
+            <dd>عند طلب مدرسة الانضمام من الموقع: اسم المؤسسة ونوعها ومحافظتها وعدد طلابها، واسم صاحبها ورقم هاتفه وبريده الإلكتروني، والوثائق المرفقة للتحقق، ومنها صورة الترخيص وصورة الهوية الشخصية. ونحفظ بعد ذلك فواتير اشتراك المدرسة في المنصة، وإيصالات الدفع التي ترفعها إدارتها. هذه البيانات تخص إدارات المدارس وتُدار من لوحة الويب.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="sec" id="limits" aria-labelledby="limits-h">
+      <h2 id="limits-h">حدود استخدام البيانات</h2>
+      <div class="body">
+        <ul class="list">
+          <li>التطبيق والمنصة خاليان من الإعلانات ومن أدوات التحليلات والتتبّع التابعة لجهات خارجية، ولا يقرأ التطبيق المعرّف الإعلاني للجهاز.</li>
+          <li>لا نبيع البيانات الشخصية أو نؤجّرها أو نشاركها لأغراض تسويقية.</li>
+          <li>لا يطلب التطبيق الوصول إلى الموقع الجغرافي أو جهات الاتصال أو الكاميرا أو الميكروفون أو الصور أو الملفات، والإذن الوحيد الذي قد يطلبه هو السماح بالإشعارات على آيفون.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sec" id="purposes" aria-labelledby="purposes-h">
+      <h2 id="purposes-h">أغراض استخدام البيانات</h2>
+      <div class="body">
+        <ul class="list">
+          <li>تسجيل الدخول، وإدارة الحسابات، وربط ولي الأمر بأبنائه.</li>
+          <li>عرض السجلات الدراسية وسجلات الأقساط لمن تأذن له المدرسة برؤيتها.</li>
+          <li>إيصال إشعارات المدرسة ومزامنة حالة قراءتها بين الأجهزة.</li>
+          <li>حماية الحسابات، وكشف محاولات الدخول غير المشروع، وتتبّع الأعطال وإصلاحها.</li>
+          <li>مراجعة طلبات انضمام المدارس، وإصدار فواتير اشتراكها في المنصة.</li>
+          <li>الرد على رسائل الدعم وطلبات الحذف.</li>
+        </ul>
+        <p>أي استخدام خارج هذه القائمة يسبقه تحديث هذه السياسة وإعلام المدارس المشتركة.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="providers" aria-labelledby="providers-h">
+      <h2 id="providers-h">مزوّدو الخدمة</h2>
+      <div class="body">
+        <p>نعتمد على عدد محدود من المزوّدين لتشغيل «قلم». يعالج كل منهم البيانات بالقدر الذي تحتاجه خدمته، وبموجب شروط تلزمه بحمايتها بمستوى لا يقل عمّا تصفه هذه السياسة.</p>
+        <dl class="rows">
+          <div>
+            <dt>Supabase</dt>
+            <dd>قاعدة البيانات، وتسجيل الدخول ورسائل استعادة كلمة المرور، وتخزين الملفات. تعمل الخوادم في مراكز بيانات Amazon Web Services في لندن بالمملكة المتحدة (منطقة <span class="ltr">eu-west-2</span>).</dd>
+          </div>
+          <div>
+            <dt>Apple Push Notification service</dt>
+            <dd>إيصال الإشعارات إلى أجهزة آيفون التي سمح أصحابها بها. يمر عنوان الإشعار ونصه ورمز الجهاز عبر خدمة Apple حتى يظهر الإشعار على الشاشة. لا دور لهذه الخدمة في أجهزة أندرويد.</dd>
+          </div>
+          <div>
+            <dt>GitHub Pages</dt>
+            <dd>استضافة الموقع العام وهذه الصفحات. ويتلقى خادم الاستضافة عنوان IP للزائر كما في أي موقع إلكتروني.</dd>
+          </div>
+          <div>
+            <dt>Google Fonts</dt>
+            <dd>الصفحة الرئيسية للموقع ولوحة الويب تحمّلان خطوطهما من خوادم Google، ويصل إليها عنوان IP للزائر عند فتحهما. تطبيق الهاتف وصفحات الخصوصية والدعم وحذف الحساب لا تستخدم هذه الخدمة.</dd>
+          </div>
+        </dl>
+        <p>قد نكشف عن بيانات إذا ألزمنا بذلك قانون نافذ أو أمر قضائي، وفي حدود ما يُلزمنا به فقط.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="transfer" aria-labelledby="transfer-h">
+      <h2 id="transfer-h">نقل البيانات خارج سورية</h2>
+      <div class="body">
+        <p>تُخزَّن بيانات «قلم» على خوادم في المملكة المتحدة، وتمر إشعارات آيفون عبر خوادم Apple. وحين تعتمد مدرسة منصة «قلم» تنتقل بيانات طلابها إلى هذه الخوادم، وتتولى المدرسة إعلام أولياء الأمور بذلك عند تعريفهم بالمنصة.</p>
+        <p>نطبّق الحماية الموصوفة في هذه السياسة على البيانات أينما خُزّنت.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="security" aria-labelledby="security-h">
+      <h2 id="security-h">حماية البيانات</h2>
+      <div class="body">
+        <ul class="list">
+          <li>الاتصال بين التطبيق أو المتصفح وخوادمنا مشفّر دائماً عبر HTTPS، والبيانات مشفّرة أثناء التخزين لدى مزوّد الاستضافة.</li>
+          <li>بيانات كل مدرسة معزولة عن المدارس الأخرى بسياسات أمان على مستوى صفوف قاعدة البيانات (<span class="ltr">RLS</span>)، يطبّقها الخادم مع كل طلب.</li>
+          <li>يصل كل مستخدم إلى ما يسمح به دوره: ولي الأمر إلى سجلات أبنائه المرتبطين بحسابه، والطالب إلى سجلاته، والكادر إلى ما تحدده صلاحيات دوره داخل مدرسته. ويصل فريق التشغيل في AcS إلى بيانات المدارس عند الدعم الفني وصيانة الخدمة، ولا يستخدمها لأي غرض آخر.</li>
+          <li>وثائق انضمام المدارس وإيصالات الدفع محفوظة في مساحات تخزين خاصة، يطّلع عليها من رفعها أو إدارة مدرسته، وفريق المراجعة في «قلم».</li>
+          <li>ننصح بتسجيل الخروج من أي جهاز يستعمله غيرك.</li>
+        </ul>
+        <p>لا يخلو نظام متصل بالإنترنت من المخاطر كلياً. وإذا وقع خرق أمني يمس بيانات مدرسة، نبلغ إدارتها دون تأخير ونعاونها على إبلاغ المتأثرين.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="retention" aria-labelledby="retention-h">
+      <h2 id="retention-h">مدة الاحتفاظ بالبيانات</h2>
+      <div class="body">
+        <ul class="list">
+          <li>تبقى بيانات المدرسة محفوظة ما دام اشتراكها في المنصة قائماً.</li>
+          <li>سجلات الطلاب والشعب والواجبات والامتحانات التي تُزال من لوحة الويب تُعلَّم محذوفة (حذف ناعم) وتبقى في قاعدة البيانات حتى لا يضيع سجل المدرسة بخطأ عابر، ولإدارة المدرسة أن تطلب استرجاعها. وإعدادات المدرسة من أعوام دراسية وصفوف ومواد وأوقات حصص تُحذف نهائياً عند إزالتها.</li>
+          <li>عند إنهاء المدرسة تعاقدها، نحذف بياناتها أو نعيدها إليها، وفق ما تطلبه.</li>
+          <li>يُحذف رمز إشعارات آيفون من خوادمنا عند تسجيل الخروج من الجهاز.</li>
+          <li>طلبات حذف الحساب نعالجها خلال 30 يوماً من استلامها، كما تشرح <a href="../delete-account/">صفحة طلب الحذف</a>.</li>
+          <li>تُمحى النسخ الاحتياطية لقاعدة البيانات وسجلات خوادمها خلال 7 أيام على الأكثر.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sec" id="children" aria-labelledby="children-h">
+      <h2 id="children-h">الأطفال والطلاب</h2>
+      <div class="body">
+        <p>«قلم» خدمة تعليمية، وكثير من الطلاب الذين تحفظ المنصة سجلاتهم دون الثامنة عشرة.</p>
+        <ul class="list">
+          <li>يحصل الطالب على حساب في التطبيق من الصف السابع فما فوق، وعن طريق مدرسته فقط. التطبيق لا يتيح إنشاء حسابات.</li>
+          <li>ولي الأمر يتابع من حسابه سجلات أبنائه الذين لم يبلغوا الصف السابع.</li>
+          <li>لا نجمع عن قصد من الأطفال بيانات تتجاوز ما تقدّمه المدرسة.</li>
+          <li>حساب الطالب مخصص للاطلاع على سجلاته، وليس فيه مراسلة أو نشر محتوى أو رفع ملفات أو إعلانات.</li>
+          <li>طلبات الاطلاع على بيانات طالب أو تصحيحها أو حذفها يقدّمها ولي الأمر أو الطالب إلى المدرسة، أو إلينا على <a class="ltr" href="mailto:info@qalamsy.com">info@qalamsy.com</a>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sec" id="rights" aria-labelledby="rights-h">
+      <h2 id="rights-h">حقوقك وخياراتك</h2>
+      <div class="body">
+        <dl class="rows">
+          <div><dt>الاطلاع</dt><dd>يعرض التطبيق السجلات المتعلقة بك أو بأبنائك. ولطلب نسخة من بيانات حسابك راسلنا أو راسل إدارة المدرسة.</dd></div>
+          <div><dt>التصحيح</dt><dd>تدخل المدرسة السجلات الدراسية وسجلات الأقساط، ويُطلب تصحيحها من إدارتها.</dd></div>
+          <div><dt>الحذف</dt><dd>لحذف الحساب والبيانات المرتبطة به، قدّم طلبك من <a href="../delete-account/">صفحة حذف الحساب</a>.</dd></div>
+          <div><dt>إشعارات الهاتف</dt><dd>يمكن إيقاف إشعارات «قلم» على آيفون متى شئت من <span class="path">الإعدادات ← الإشعارات ← قلم</span>، وتبقى الإشعارات متاحة في صندوق الوارد داخل التطبيق.</dd></div>
+          <div><dt>تسجيل الخروج</dt><dd>من <span class="path">«حسابي» ← «تسجيل الخروج»</span>. ينهي ذلك الجلسة على الجهاز، ويحذف رمز إشعاراته من خوادمنا على آيفون.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="sec" id="changes" aria-labelledby="changes-h">
+      <h2 id="changes-h">تعديل هذه السياسة</h2>
+      <div class="body">
+        <p>قد نعدّل هذه السياسة عند إضافة ميزة جديدة أو تغيير أحد مزوّدي الخدمة. تُنشر النسخة المعدّلة في هذه الصفحة مع تاريخ سريانها، ونُبلغ إدارات المدارس المشتركة بأي تعديل جوهري قبل العمل به.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">التواصل</h2>
+      <div class="body">
+        <p>للأسئلة عن الخصوصية أو أي طلب يخص البيانات، راسلنا على <a class="ltr" href="mailto:info@qalamsy.com">info@qalamsy.com</a>، أو تواصل عبر إدارة مدرستك.</p>
+        <p>وفي صفحة <a href="../support/">الدعم والمساعدة</a> أجوبة الأسئلة الشائعة.</p>
+      </div>
+    </section>
+  </div>
+</article>
+
+<article id="en" class="en" lang="en" dir="ltr">
+  <div class="wrap">
+    <div class="bar-en">
+      <span>English version</span>
+      <a class="switch" href="#top" hreflang="ar"><span lang="ar" dir="rtl">العربية</span></a>
+    </div>
+    <header class="head">
+      <span class="rule-accent" aria-hidden="true"></span>
+      <p class="kicker">Qalam · AcS</p>
+      <h1>Privacy Policy for the Qalam App and Platform</h1>
+      <ul class="meta">
+        <li>Effective date: <b>8 October 2026</b></li>
+        <li>Developer: <b>AcS</b></li>
+        <li>Email: <a href="mailto:info@qalamsy.com">info@qalamsy.com</a></li>
+      </ul>
+      <p class="lede">This policy covers the Qalam app for parents and students on Android and iPhone, the Qalam web dashboard that school staff use in a browser, and the pages of the public website. It sets out what data we process and why, who can see it, how long we keep it, and how to ask for it to be deleted.</p>
+    </header>
+
+    <nav class="toc" aria-labelledby="toc-en">
+      <h2 id="toc-en">Contents</h2>
+      <ol>
+        <li><a href="#en-who">Developer and operator</a></li>
+        <li><a href="#en-roles">Role of the school and of AcS</a></li>
+        <li><a href="#en-data">Data we process</a></li>
+        <li><a href="#en-limits">Limits on data use</a></li>
+        <li><a href="#en-purposes">Purposes of processing</a></li>
+        <li><a href="#en-providers">Service providers</a></li>
+        <li><a href="#en-transfer">Transfers outside Syria</a></li>
+        <li><a href="#en-security">Data security</a></li>
+        <li><a href="#en-retention">Data retention</a></li>
+        <li><a href="#en-children">Children and students</a></li>
+        <li><a href="#en-rights">Your rights and choices</a></li>
+        <li><a href="#en-changes">Changes to this policy</a></li>
+        <li><a href="#en-contact">Contact</a></li>
+      </ol>
+    </nav>
+
+    <section class="sec" id="en-who" aria-labelledby="en-who-h">
+      <h2 id="en-who-h">Developer and operator</h2>
+      <div class="body">
+        <p>Qalam (<span lang="ar" dir="rtl">قلم</span>) is a management platform for private schools and institutes in Syria, developed and operated by AcS. Wherever this policy says “we” or “the Qalam team”, it means AcS.</p>
+        <dl class="rows">
+          <div><dt>App name</dt><dd>Qalam (<span lang="ar" dir="rtl">قلم</span>)</dd></div>
+          <div><dt>Developer and operator</dt><dd>AcS</dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:info@qalamsy.com">info@qalamsy.com</a></dd></div>
+          <div><dt>Website</dt><dd><a href="../">abdalrzakacs.github.io/qalam-web</a></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="sec" id="en-roles" aria-labelledby="en-roles-h">
+      <h2 id="en-roles-h">Role of the school and of AcS</h2>
+      <div class="body">
+        <p>A school subscribes to Qalam to organize its work. Its administration then creates the accounts of parents and students and enters student data and records.</p>
+        <p>The school is responsible for the data it enters and for its accuracy, and for telling parents that it uses Qalam and making this policy known to them. AcS processes this data on the school’s behalf and under its instructions, to run the service for that school and no other.</p>
+        <p>Requests about a student’s records, such as correcting a grade or deleting an entry, go to the school administration first, and we help the school carry them out.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="en-data" aria-labelledby="en-data-h">
+      <h2 id="en-data-h">Data we process</h2>
+      <div class="body">
+        <dl class="rows">
+          <div>
+            <dt>Account data</dt>
+            <dd>
+              <p>Full name, the email address used to sign in, a phone number if the school recorded one, the account type (parent, student or staff member), and the school the account belongs to. For a parent account: the linked children and the family relationship.</p>
+              <p>Passwords are stored by the authentication service in hashed form that cannot be read back, and users are asked to set their own password at first sign-in.</p>
+            </dd>
+          </div>
+          <div>
+            <dt>Basic student data</dt>
+            <dd>Name, gender, date of birth if the school entered it, grade and section, and academic year.</dd>
+          </div>
+          <div>
+            <dt>Education records</dt>
+            <dd>Attendance, absence, lateness and early leave with their notes; grades and assessment results; behavior points and notes that the school chooses to show to parents; homework; exam dates; and the weekly timetable including teachers’ names. School staff enter these records in the web dashboard, and the app shows them to parents and students as read-only.</dd>
+          </div>
+          <div>
+            <dt>School fee records</dt>
+            <dd>The fee due for each term and its currency, and payments with their amounts, dates, payment method and transaction reference number, as the school records them. In the app, only parents see these records. Fees are paid to the school directly, outside the app; the app does not ask for or store any bank card, bank account or e-wallet details.</dd>
+          </div>
+          <div>
+            <dt>Notifications</dt>
+            <dd>Notifications the school sends to the account: absence and lateness notices, which arrive automatically when they are recorded, and announcements and reminders about fees and exams that staff send from the web dashboard. The time each notification is read is stored so that it shows as read on your devices.</dd>
+          </div>
+          <div>
+            <dt>Technical data</dt>
+            <dd>
+              <ul class="list">
+                <li>The sign-in session, stored on the device so you are not asked to sign in every time, and removed when you sign out.</li>
+                <li>On iPhone only, after the user allows notifications: the device token for the Apple Push Notification service, stored with the account to deliver notifications to that device.</li>
+                <li>The operating system name and version, which the app sends with its requests as part of standard connection data.</li>
+                <li>Server logs, including IP address, request time and app or browser type, kept by the hosting provider for security and operation.</li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>Audit log</dt>
+            <dd>When grades are entered or changed, when attendance or behavior records are changed, and when a school’s platform subscription payment is recorded, the system keeps who did it and when, with the value before and after, to protect the school’s official record.</dd>
+          </div>
+          <div>
+            <dt>School onboarding data</dt>
+            <dd>When a school applies to join through the website: the institution’s name, type, governorate and number of students; the owner’s name, phone number and email address; and the documents attached for verification, including the license and a personal ID image. We later keep the school’s platform subscription invoices and the payment receipts its administration uploads. This data concerns school administrations and is handled in the web dashboard.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="sec" id="en-limits" aria-labelledby="en-limits-h">
+      <h2 id="en-limits-h">Limits on data use</h2>
+      <div class="body">
+        <ul class="list">
+          <li>The app and the platform contain no advertising and no third-party analytics or tracking tools, and they never read the device’s advertising identifier.</li>
+          <li>We do not sell, rent or share personal data for marketing.</li>
+          <li>The app does not request access to location, contacts, camera, microphone, photos or files. The only permission you may be asked for is to allow notifications on iPhone.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sec" id="en-purposes" aria-labelledby="en-purposes-h">
+      <h2 id="en-purposes-h">Purposes of processing</h2>
+      <div class="body">
+        <ul class="list">
+          <li>Signing in, managing accounts, and linking parents to their children.</li>
+          <li>Showing education and fee records to the people the school allows to see them.</li>
+          <li>Delivering school notifications and syncing their read status across devices.</li>
+          <li>Protecting accounts, detecting unauthorized sign-in attempts, and tracing and fixing faults.</li>
+          <li>Reviewing school applications and issuing platform subscription invoices.</li>
+          <li>Answering support messages and deletion requests.</li>
+        </ul>
+        <p>Any use outside this list will be preceded by an update to this policy and notice to subscribing schools.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="en-providers" aria-labelledby="en-providers-h">
+      <h2 id="en-providers-h">Service providers</h2>
+      <div class="body">
+        <p>We rely on a small number of providers to run Qalam. Each processes data only as far as its service requires, under terms that oblige it to protect the data at least as well as this policy describes.</p>
+        <dl class="rows">
+          <div>
+            <dt>Supabase</dt>
+            <dd>Database, sign-in and password-reset emails, and file storage. The servers run in Amazon Web Services data centers in London, United Kingdom (region eu-west-2).</dd>
+          </div>
+          <div>
+            <dt>Apple Push Notification service</dt>
+            <dd>Delivers notifications to iPhones whose owners have allowed them. The notification title and text and the device token pass through Apple’s service so that the notification can appear on screen. This service plays no part on Android devices.</dd>
+          </div>
+          <div>
+            <dt>GitHub Pages</dt>
+            <dd>Hosts the public website and these pages. As with any website, the host receives the visitor’s IP address.</dd>
+          </div>
+          <div>
+            <dt>Google Fonts</dt>
+            <dd>The website home page and the web dashboard load their fonts from Google servers, which receive the visitor’s IP address when those pages open. The mobile app and the privacy, support and account deletion pages do not use this service.</dd>
+          </div>
+        </dl>
+        <p>We may disclose data where an applicable law or court order requires it, and only to the extent required.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="en-transfer" aria-labelledby="en-transfer-h">
+      <h2 id="en-transfer-h">Transfers outside Syria</h2>
+      <div class="body">
+        <p>Qalam data is stored on servers in the United Kingdom, and iPhone notifications pass through Apple’s servers. When a school adopts Qalam, its students’ data moves to these servers, and the school informs parents of this when it introduces the platform to them.</p>
+        <p>We apply the protections described in this policy wherever the data is stored.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="en-security" aria-labelledby="en-security-h">
+      <h2 id="en-security-h">Data security</h2>
+      <div class="body">
+        <ul class="list">
+          <li>Connections between the app or browser and our servers are always encrypted over HTTPS, and data is encrypted at rest by the hosting provider.</li>
+          <li>Each school’s data is isolated from other schools by database row-level security (RLS) policies, which the server enforces on every request.</li>
+          <li>Each user reaches only what their role allows: a parent sees the records of children linked to their account, a student sees their own records, and staff see what their role permits within their school. The AcS operations team can access school data when providing technical support and maintaining the service, and uses it for no other purpose.</li>
+          <li>School onboarding documents and payment receipts are kept in private storage, visible to the person or school administration that uploaded them and to the Qalam review team.</li>
+          <li>We recommend signing out of any device that other people also use.</li>
+        </ul>
+        <p>No system connected to the internet is entirely free of risk. If a security breach affects a school’s data, we will inform its administration without delay and help it notify the people affected.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="en-retention" aria-labelledby="en-retention-h">
+      <h2 id="en-retention-h">Data retention</h2>
+      <div class="body">
+        <ul class="list">
+          <li>A school’s data is kept for as long as its subscription to the platform is active.</li>
+          <li>Student, section, homework and exam records removed in the web dashboard are marked as deleted (soft delete) and stay in the database so that a passing mistake does not erase the school’s record; the school administration can ask for them to be restored. School set-up items (academic years, grades, subjects and period times) are deleted permanently when removed.</li>
+          <li>When a school ends its contract, we delete its data or return it to the school, as the school requests.</li>
+          <li>The iPhone notification token is deleted from our servers when you sign out on that device.</li>
+          <li>Account deletion requests are processed within 30 days of receipt, as explained on the <a href="../delete-account/">account deletion page</a>.</li>
+          <li>Database backups and the logs of the database servers are erased within 7 days at the latest.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sec" id="en-children" aria-labelledby="en-children-h">
+      <h2 id="en-children-h">Children and students</h2>
+      <div class="body">
+        <p>Qalam is an education service, and many of the students whose records it holds are under 18.</p>
+        <ul class="list">
+          <li>Students receive an app account from grade 7 upward, and only through their school. The app cannot be used to create accounts.</li>
+          <li>Parents follow the records of children below grade 7 through their own account.</li>
+          <li>We do not knowingly collect data from children beyond what the school provides.</li>
+          <li>A student account is for viewing the student’s own records. It has no messaging, posting, file uploads or advertising.</li>
+          <li>Requests to access, correct or delete a student’s data can be made by the parent or student to the school, or to us at <a href="mailto:info@qalamsy.com">info@qalamsy.com</a>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sec" id="en-rights" aria-labelledby="en-rights-h">
+      <h2 id="en-rights-h">Your rights and choices</h2>
+      <div class="body">
+        <dl class="rows">
+          <div><dt>Access</dt><dd>The app shows the records that concern you or your children. To request a copy of your account data, write to us or to the school administration.</dd></div>
+          <div><dt>Correction</dt><dd>The school enters education and fee records, so corrections are requested from its administration.</dd></div>
+          <div><dt>Deletion</dt><dd>To delete your account and its data, make a request on the <a href="../delete-account/">account deletion page</a>.</dd></div>
+          <div><dt>Phone notifications</dt><dd>You can turn off Qalam notifications on iPhone at any time in Settings → Notifications → Qalam (<span lang="ar" dir="rtl">قلم</span>). Notifications remain available in the inbox inside the app.</dd></div>
+          <div><dt>Signing out</dt><dd>In the app, open <span lang="ar" dir="rtl">حسابي</span> (My account) → <span lang="ar" dir="rtl">تسجيل الخروج</span> (Sign out). This ends the session on the device and, on iPhone, deletes that device’s notification token from our servers.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="sec" id="en-changes" aria-labelledby="en-changes-h">
+      <h2 id="en-changes-h">Changes to this policy</h2>
+      <div class="body">
+        <p>We may update this policy when we add a feature or change a service provider. The updated version is published on this page with its effective date, and subscribing schools are told about any material change before it takes effect.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="en-contact" aria-labelledby="en-contact-h">
+      <h2 id="en-contact-h">Contact</h2>
+      <div class="body">
+        <p>For privacy questions or any request about your data, email <a href="mailto:info@qalamsy.com">info@qalamsy.com</a>, or contact us through your school’s administration.</p>
+        <p>The <a href="../support/">Support</a> page answers common questions.</p>
+      </div>
+    </section>
+  </div>
+</article>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <nav aria-label="روابط قلم">
+      <a href="../privacy/" aria-current="page">سياسة الخصوصية</a>
+      <a href="../support/">الدعم والمساعدة</a>
+      <a href="../delete-account/">حذف الحساب</a>
+      <a href="../terms">شروط الاستخدام</a>
+      <a href="../">موقع قلم</a>
+    </nav>
+    <nav aria-label="Qalam links" lang="en" dir="ltr">
+      <a href="../privacy/" aria-current="page">Privacy Policy</a>
+      <a href="../support/">Support</a>
+      <a href="../delete-account/">Account deletion</a>
+      <a href="../terms">Terms of use</a>
+      <a href="../">Qalam website</a>
+    </nav>
+    <p class="copy"><span class="ltr">© 2026 AcS</span></p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>حذف حساب قلم | Qalam Account Deletion</title>
+<meta name="description" content="طريقة طلب حذف حساب تطبيق «قلم» من AcS والبيانات المرتبطة به: خطوات الطلب، والمدة، وما يُحذف وما قد يبقى. How to request deletion of a Qalam account and its data.">
+<link rel="canonical" href="https://abdalrzakacs.github.io/qalam-web/delete-account/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#1C3667">
+<style>
+@font-face{font-family:"Plex Arabic";src:url("../fonts/IBMPlexSansArabic-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Plex Arabic";src:url("../fonts/IBMPlexSansArabic-Bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+:root{--navy:#1C3667;--blue:#2F62C9;--light:#D6E9FF;--green:#8DC63F;--ink:#18212F;--text:#334155;--muted:#5D6A7D;--rule:#DCE3ED;--wash:#F3F8FE}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:16px}
+body{margin:0;background:#fff;color:var(--text);font:400 17px/1.95 "Plex Arabic",system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;overflow-wrap:break-word}
+[lang="en"]{font-size:16.5px;line-height:1.72}
+h1,h2,h3{color:var(--navy);font-weight:700;margin:0}
+p{margin:0 0 .85em}
+ul,ol{margin:0 0 .85em;padding:0}
+a{color:var(--blue);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.24em}
+a:hover{color:var(--navy)}
+a:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:2px}
+b,strong{color:var(--ink);font-weight:700}
+.ltr{direction:ltr;unicode-bidi:isolate}
+.wrap{width:100%;max-width:1060px;margin-inline:auto;padding-inline:20px}
+.bar{border-bottom:1px solid var(--rule)}
+.bar .wrap{display:flex;align-items:center;gap:14px;min-height:70px}
+.brand{display:inline-flex;align-items:center;gap:10px;color:var(--navy);text-decoration:none;font-weight:700;font-size:24px;line-height:1}
+.brand img{height:40px;width:auto;display:block}
+.brand b{color:var(--green)}
+.brand:hover{color:var(--navy)}
+.switch{margin-inline-start:auto;font-size:15px;font-weight:700;color:var(--navy);text-decoration:none;border-bottom:1px solid var(--navy);padding-bottom:2px;line-height:1.4}
+.switch:hover{color:var(--blue);border-color:var(--blue)}
+.head{padding-block:52px 30px}
+.rule-accent{display:block;width:56px;height:3px;background:var(--green);margin-bottom:20px}
+.kicker{font-size:14.5px;color:var(--blue);font-weight:700;margin-bottom:10px}
+.head h1{font-size:clamp(27px,4.4vw,42px);line-height:1.4;max-width:30ch}
+[lang="en"] .head h1{line-height:1.2;letter-spacing:-.01em}
+.meta{margin:18px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:4px 26px;font-size:15px;color:var(--muted)}
+.meta b{color:var(--ink)}
+.lede{margin-top:22px;max-width:66ch;font-size:18px;line-height:1.9;color:var(--ink)}
+[lang="en"] .lede{font-size:17.5px;line-height:1.65}
+.toc{border-top:2px solid var(--navy);padding-top:16px;margin-bottom:34px}
+.toc h2{font-size:15px;color:var(--muted);margin-bottom:6px}
+.toc ol{list-style:none;columns:2 250px;column-gap:44px;margin:0}
+.toc li{break-inside:avoid;border-bottom:1px solid var(--rule)}
+.toc a{display:block;padding:9px 0;color:var(--ink);text-decoration:none;font-size:16px;line-height:1.6}
+.toc a:hover{color:var(--blue)}
+.sec{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;border-top:1px solid var(--rule);padding-block:30px}
+.sec h2{font-size:20px;line-height:1.55}
+[lang="en"] .sec h2{font-size:19px;line-height:1.35}
+.body{max-width:70ch}
+.body>:last-child{margin-bottom:0}
+.rows{margin:0 0 .85em}
+.rows>div{border-top:1px solid var(--rule);padding-block:14px}
+.rows>div:first-child{border-top:0;padding-top:2px}
+.rows>div:last-child{padding-bottom:0}
+.rows dt{color:var(--ink);font-weight:700;margin-bottom:3px}
+.rows dd{margin:0}
+.rows dd>:last-child{margin-bottom:0}
+.list{list-style:none}
+.list li{position:relative;padding-inline-start:22px;margin-bottom:.5em}
+.list li::before{content:"";position:absolute;inset-inline-start:2px;top:.82em;width:7px;height:7px;background:var(--green)}
+[lang="en"] .list li::before{top:.66em}
+.list li:last-child{margin-bottom:0}
+.list+p,.rows+p{margin-top:.85em}
+.steps{list-style:none;counter-reset:step;margin:0 0 .85em}
+.steps>li{counter-increment:step;display:grid;grid-template-columns:38px minmax(0,1fr);border-top:1px solid var(--rule);padding-block:16px}
+.steps>li:first-child{border-top:0;padding-top:2px}
+.steps>li::before{content:counter(step);color:var(--navy);font-weight:700;font-size:21px;line-height:1.45}
+.steps b{display:block;margin-bottom:2px}
+.cta{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;font-weight:700;font-size:16px;line-height:1.5;padding:11px 20px;border-radius:6px;margin-top:6px}
+.cta:hover{background:var(--blue);color:#fff}
+.note{background:var(--wash);border-inline-start:3px solid var(--green);padding:14px 18px;color:var(--ink);margin:0 0 .85em}
+.path{white-space:nowrap;color:var(--ink);font-weight:700}
+.en{border-top:3px solid var(--navy);margin-top:34px;background:linear-gradient(var(--wash),#fff 300px)}
+.en .bar-en{display:flex;align-items:center;gap:14px;min-height:56px;border-bottom:1px solid var(--rule)}
+.en .bar-en span{font-size:14.5px;color:var(--muted);font-weight:700}
+.en .switch{font-size:15px}
+.foot{border-top:1px solid var(--rule);margin-top:26px;padding-block:28px 40px;color:var(--muted);font-size:15px;line-height:1.7}
+.foot-in{display:grid;grid-template-columns:minmax(0,1fr);gap:10px 48px}
+.foot nav{display:flex;flex-wrap:wrap;gap:6px 24px}
+.foot [lang="en"]{font-size:inherit;line-height:inherit}
+.foot a{color:var(--ink);text-decoration:none}
+.foot a:hover{color:var(--blue);text-decoration:underline}
+.foot a[aria-current="page"]{color:var(--blue);font-weight:700}
+.foot .copy{margin:8px 0 0}
+@media (min-width:880px){
+  .sec{grid-template-columns:236px minmax(0,1fr);gap:52px;padding-block:34px}
+  .rows>div{display:grid;grid-template-columns:190px minmax(0,1fr);gap:24px}
+  .rows dt{margin-bottom:0}
+  .foot-in{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .foot .copy{grid-column:1/-1}
+}
+@media (max-width:560px){
+  body{font-size:16.5px}
+  .head{padding-block:34px 22px}
+  .lede{font-size:17px}
+  .sec{padding-block:24px}
+  .brand{font-size:22px}
+  .brand img{height:36px}
+}
+@media print{
+  .switch,.toc,.foot nav{display:none}
+  body{font-size:11.5pt}
+  .en{background:none}
+  a{color:inherit}
+}
+</style>
+</head>
+<body id="top">
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="قلم — الصفحة الرئيسية">
+      <img src="../brand/qalam-logo.png" alt="" width="24" height="40">
+      <span>قلم<b>.</b></span>
+    </a>
+    <a class="switch" href="#en" hreflang="en" lang="en">English</a>
+  </div>
+</header>
+
+<main>
+<article id="ar" lang="ar" dir="rtl">
+  <div class="wrap">
+    <header class="head">
+      <span class="rule-accent" aria-hidden="true"></span>
+      <p class="kicker">قلم · AcS</p>
+      <h1>طلب حذف حساب قلم وبياناته</h1>
+      <ul class="meta">
+        <li>التطبيق: <b>قلم</b></li>
+        <li>المطوّر: <b>AcS</b></li>
+        <li>آخر تحديث: <b>8 تشرين الأول 2026</b></li>
+      </ul>
+      <p class="lede">تشرح هذه الصفحة كيف يطلب ولي الأمر أو الطالب حذف حسابه في تطبيق «قلم» والبيانات المرتبطة به. تنشئ المدرسة حسابات التطبيق، ويُقدَّم طلب الحذف بالبريد الإلكتروني أو عن طريق إدارة المدرسة، دون الحاجة إلى فتح التطبيق.</p>
+    </header>
+
+    <section class="sec" id="steps" aria-labelledby="steps-h">
+      <h2 id="steps-h">خطوات تقديم الطلب</h2>
+      <div class="body">
+        <ol class="steps">
+          <li><div><b>راسلنا من بريد الحساب</b>أرسل رسالة إلى <a class="ltr" href="mailto:info@qalamsy.com">info@qalamsy.com</a> من البريد الإلكتروني المسجّل في حسابك، أي البريد الذي تدخل به إلى التطبيق، واجعل عنوانها «طلب حذف حساب».</div></li>
+          <li><div><b>اذكر بيانات التعريف</b>اكتب في الرسالة اسمك الكامل، واسم المدرسة، ونوع الحساب: ولي أمر أو طالب. وإذا تعذّرت عليك المراسلة من بريد الحساب، فاطلب من إدارة مدرستك أن ترفع الطلب نيابةً عنك.</div></li>
+          <li><div><b>نتحقق مع المدرسة</b>قبل التنفيذ نتأكد مع إدارة المدرسة أن الطلب صادر عن صاحب الحساب. وإذا كان الحساب لطالب قاصر، فقد نطلب تأكيداً من ولي أمره.</div></li>
+          <li><div><b>ننفّذ ونؤكّد</b>نُتمّ الحذف خلال 30 يوماً من استلام الطلب، ونرسل تأكيداً عند الانتهاء إلى البريد الذي وصل منه الطلب، أو إلى إدارة المدرسة إن قدّمته نيابةً عنك.</div></li>
+        </ol>
+        <a class="cta" href="mailto:info@qalamsy.com?subject=%D8%B7%D9%84%D8%A8%20%D8%AD%D8%B0%D9%81%20%D8%AD%D8%B3%D8%A7%D8%A8">كتابة رسالة طلب الحذف</a>
+      </div>
+    </section>
+
+    <section class="sec" id="deleted" aria-labelledby="deleted-h">
+      <h2 id="deleted-h">البيانات التي تُحذف</h2>
+      <div class="body">
+        <ul class="list">
+          <li>حساب الدخول: البريد الإلكتروني وكلمة المرور.</li>
+          <li>الملف الشخصي: الاسم، ورقم الهاتف إن وُجد، ونوع الحساب.</li>
+          <li>روابط حساب ولي الأمر بأبنائه.</li>
+          <li>رموز إشعارات الأجهزة المسجّلة للحساب على آيفون.</li>
+          <li>الإشعارات الواردة إلى الحساب وحالة قراءتها.</li>
+        </ul>
+        <p>يتوقف الدخول بهذا الحساب نهائياً بعد الحذف. وإذا احتجت إلى حساب لاحقاً، تنشئ لك المدرسة حساباً جديداً.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="kept" aria-labelledby="kept-h">
+      <h2 id="kept-h">البيانات التي قد تبقى وسبب بقائها</h2>
+      <div class="body">
+        <dl class="rows">
+          <div>
+            <dt>السجلات الدراسية</dt>
+            <dd>الحضور والعلامات والسلوك والواجبات والأقساط والدفعات جزء من السجل الرسمي للمدرسة. تحفظها المدرسة أو تحذفها بقرارها ووفق القوانين النافذة، وتبقى لديها بعد حذف الحساب دون حساب دخول مرتبط بها.</dd>
+          </div>
+          <div>
+            <dt>إشعارات المدرسة</dt>
+            <dd>يبقى نص الإشعار في سجل المدرسة كما أرسلته، وتُحذف نسخته الواردة إلى حسابك.</dd>
+          </div>
+          <div>
+            <dt>سجلات الخادم والنسخ الاحتياطية</dt>
+            <dd>تُمحى خلال 7 أيام على الأكثر من تنفيذ الحذف، ويقتصر استخدامها حتى ذلك الحين على أغراض الأمان واستعادة النظام بعد عطل.</dd>
+          </div>
+        </dl>
+        <p class="note">لحذف السجلات الدراسية أيضاً، وجّه طلبك إلى إدارة المدرسة، ونحن ننفّذ ما تقرره.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="keep-account" aria-labelledby="keep-account-h">
+      <h2 id="keep-account-h">إيقاف الإشعارات أو تسجيل الخروج مع إبقاء الحساب</h2>
+      <div class="body">
+        <dl class="rows">
+          <div><dt>إشعارات آيفون</dt><dd>أوقف «السماح بالإشعارات» من <span class="path">الإعدادات ← الإشعارات ← قلم</span>، وتبقى الإشعارات متاحة داخل التطبيق.</dd></div>
+          <div><dt>أندرويد</dt><dd>تُعرض إشعارات «قلم» على أندرويد داخل التطبيق وحده، ويظهر الجديد منها عند فتحه.</dd></div>
+          <div><dt>تسجيل الخروج</dt><dd>من <span class="path">«حسابي» ← «تسجيل الخروج»</span>. ينهي هذا الجلسة على الجهاز، ويحذف على آيفون رمز إشعاراته من خوادمنا، وعندها تتوقف إشعاراته.</dd></div>
+          <div><dt>حذف التطبيق من الهاتف</dt><dd>يزيل بيانات التطبيق من الجهاز، ويبقى الحساب قائماً حتى يُطلب حذفه.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="sec" id="staff" aria-labelledby="staff-h">
+      <h2 id="staff-h">حسابات كادر المدرسة</h2>
+      <div class="body">
+        <p>تُدار حسابات المديرين والمعلمين والمشرفين من لوحة «قلم» على الويب. أسماء أصحابها تظهر في سجلات المدرسة التي أدخلوها، كالعلامات والحضور، لذا توقف إدارة المدرسة حساب من يترك العمل فيها، ويبقى الحساب الموقوف في قاعدة البيانات مرتبطاً بتلك السجلات. ولإيقاف حسابك تواصل مع إدارة مدرستك.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">التواصل</h2>
+      <div class="body">
+        <p>لأي استفسار عن الحذف راسلنا على <a class="ltr" href="mailto:info@qalamsy.com">info@qalamsy.com</a>. وتجد في <a href="../privacy/">سياسة الخصوصية</a> تفاصيل البيانات التي نعالجها ومدة حفظها.</p>
+      </div>
+    </section>
+  </div>
+</article>
+
+<article id="en" class="en" lang="en" dir="ltr">
+  <div class="wrap">
+    <div class="bar-en">
+      <span>English version</span>
+      <a class="switch" href="#top" hreflang="ar"><span lang="ar" dir="rtl">العربية</span></a>
+    </div>
+    <header class="head">
+      <span class="rule-accent" aria-hidden="true"></span>
+      <p class="kicker">Qalam · AcS</p>
+      <h1>Request deletion of your Qalam account and data</h1>
+      <ul class="meta">
+        <li>App: <b>Qalam (<span lang="ar" dir="rtl">قلم</span>)</b></li>
+        <li>Developer: <b>AcS</b></li>
+        <li>Last updated: <b>8 October 2026</b></li>
+      </ul>
+      <p class="lede">This page explains how a parent or student who uses the Qalam app can ask for their account and its data to be deleted. Accounts in the app are created by the school. You can request deletion by email or through your school’s administration, without opening the app.</p>
+    </header>
+
+    <section class="sec" id="en-steps" aria-labelledby="en-steps-h">
+      <h2 id="en-steps-h">How to make a request</h2>
+      <div class="body">
+        <ol class="steps">
+          <li><div><b>Write from your account’s email address</b>Send a message to <a href="mailto:info@qalamsy.com">info@qalamsy.com</a> from the email address registered on your account, that is, the address you use to sign in to the app, with the subject “Account deletion request” (<span lang="ar" dir="rtl">طلب حذف حساب</span>).</div></li>
+          <li><div><b>Identify yourself</b>Include your full name, your school’s name and your account type: parent or student. If you cannot write from the account’s email address, ask your school’s administration to send the request on your behalf.</div></li>
+          <li><div><b>We verify with the school</b>Before acting, we confirm with the school administration that the request comes from the account holder. If the account belongs to a student who is a minor, we may ask the parent to confirm.</div></li>
+          <li><div><b>We delete and confirm</b>We complete the deletion within 30 days of receiving the request and, when it is done, send a confirmation to the email address the request came from, or to the school administration if it made the request for you.</div></li>
+        </ol>
+        <a class="cta" href="mailto:info@qalamsy.com?subject=Account%20deletion%20request%20-%20%D8%B7%D9%84%D8%A8%20%D8%AD%D8%B0%D9%81%20%D8%AD%D8%B3%D8%A7%D8%A8">Write a deletion request</a>
+      </div>
+    </section>
+
+    <section class="sec" id="en-deleted" aria-labelledby="en-deleted-h">
+      <h2 id="en-deleted-h">Data that is deleted</h2>
+      <div class="body">
+        <ul class="list">
+          <li>The sign-in account: email address and password.</li>
+          <li>The profile: name, phone number if any, and account type.</li>
+          <li>Links between a parent account and the children.</li>
+          <li>Notification device tokens registered for the account on iPhone.</li>
+          <li>Notifications received by the account and their read status.</li>
+        </ul>
+        <p>After deletion, signing in with this account stops permanently. If you need an account later, your school can create a new one for you.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="en-kept" aria-labelledby="en-kept-h">
+      <h2 id="en-kept-h">Data that may be kept, and why</h2>
+      <div class="body">
+        <dl class="rows">
+          <div>
+            <dt>Education records</dt>
+            <dd>Attendance, grades, behavior, homework, fees and payments are part of the school’s official record. The school keeps or deletes them by its own decision and in line with applicable law, and they stay with the school after the account is deleted, with no sign-in account attached.</dd>
+          </div>
+          <div>
+            <dt>School notifications</dt>
+            <dd>The text of a notification stays in the school’s records as the school sent it; the copy delivered to your account is deleted.</dd>
+          </div>
+          <div>
+            <dt>Server logs and backups</dt>
+            <dd>They are erased within 7 days of the deletion at the latest. Until then they are used only for security and for restoring the system after a fault.</dd>
+          </div>
+        </dl>
+        <p class="note">To have the education records deleted as well, send your request to the school administration. We carry out its decision.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="en-keep-account" aria-labelledby="en-keep-account-h">
+      <h2 id="en-keep-account-h">Turning off notifications or signing out while keeping the account</h2>
+      <div class="body">
+        <dl class="rows">
+          <div><dt>iPhone notifications</dt><dd>Go to Settings → Notifications → Qalam (<span lang="ar" dir="rtl">قلم</span>) and turn off Allow Notifications. Notifications stay available inside the app.</dd></div>
+          <div><dt>Android</dt><dd>On Android, Qalam notifications are shown inside the app only, and new ones appear when you open it.</dd></div>
+          <div><dt>Signing out</dt><dd>Open <span lang="ar" dir="rtl">حسابي</span> (My account) → <span lang="ar" dir="rtl">تسجيل الخروج</span> (Sign out). This ends the session on the device and, on iPhone, deletes that device’s notification token from our servers, which stops its notifications.</dd></div>
+          <div><dt>Deleting the app</dt><dd>Removing the app from your phone deletes its data from the device. The account remains until its deletion is requested.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="sec" id="en-staff" aria-labelledby="en-staff-h">
+      <h2 id="en-staff-h">School staff accounts</h2>
+      <div class="body">
+        <p>Accounts of principals, teachers and supervisors are managed in the Qalam web dashboard. Their holders’ names appear on the school records they entered, such as grades and attendance, so the school administration deactivates the account of someone who leaves, and the deactivated account stays in the database linked to those records. To have your account deactivated, contact your school’s administration.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="en-contact" aria-labelledby="en-contact-h">
+      <h2 id="en-contact-h">Contact</h2>
+      <div class="body">
+        <p>For any question about deletion, email <a href="mailto:info@qalamsy.com">info@qalamsy.com</a>. The data we process and how long we keep it are described in the <a href="../privacy/">Privacy Policy</a>.</p>
+      </div>
+    </section>
+  </div>
+</article>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <nav aria-label="روابط قلم">
+      <a href="../privacy/">سياسة الخصوصية</a>
+      <a href="../support/">الدعم والمساعدة</a>
+      <a href="../delete-account/" aria-current="page">حذف الحساب</a>
+      <a href="../terms">شروط الاستخدام</a>
+      <a href="../">موقع قلم</a>
+    </nav>
+    <nav aria-label="Qalam links" lang="en" dir="ltr">
+      <a href="../privacy/">Privacy Policy</a>
+      <a href="../support/">Support</a>
+      <a href="../delete-account/" aria-current="page">Account deletion</a>
+      <a href="../terms">Terms of use</a>
+      <a href="../">Qalam website</a>
+    </nav>
+    <p class="copy"><span class="ltr">© 2026 AcS</span></p>
+  </div>
+</footer>
+
+</body>
+</html>

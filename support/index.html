@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الدعم والمساعدة — قلم | Qalam Support</title>
+<meta name="description" content="الدعم والمساعدة لتطبيق «قلم» من AcS: التواصل، والحصول على حساب من المدرسة، ونسيان كلمة المرور، والإشعارات، والأقساط المدرسية. Support for the Qalam app.">
+<link rel="canonical" href="https://abdalrzakacs.github.io/qalam-web/support/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#1C3667">
+<style>
+@font-face{font-family:"Plex Arabic";src:url("../fonts/IBMPlexSansArabic-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Plex Arabic";src:url("../fonts/IBMPlexSansArabic-Bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+:root{--navy:#1C3667;--blue:#2F62C9;--light:#D6E9FF;--green:#8DC63F;--ink:#18212F;--text:#334155;--muted:#5D6A7D;--rule:#DCE3ED;--wash:#F3F8FE}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:16px}
+body{margin:0;background:#fff;color:var(--text);font:400 17px/1.95 "Plex Arabic",system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;overflow-wrap:break-word}
+[lang="en"]{font-size:16.5px;line-height:1.72}
+h1,h2,h3{color:var(--navy);font-weight:700;margin:0}
+p{margin:0 0 .85em}
+ul,ol{margin:0 0 .85em;padding:0}
+a{color:var(--blue);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.24em}
+a:hover{color:var(--navy)}
+a:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:2px}
+b,strong{color:var(--ink);font-weight:700}
+.ltr{direction:ltr;unicode-bidi:isolate}
+.wrap{width:100%;max-width:1060px;margin-inline:auto;padding-inline:20px}
+.bar{border-bottom:1px solid var(--rule)}
+.bar .wrap{display:flex;align-items:center;gap:14px;min-height:70px}
+.brand{display:inline-flex;align-items:center;gap:10px;color:var(--navy);text-decoration:none;font-weight:700;font-size:24px;line-height:1}
+.brand img{height:40px;width:auto;display:block}
+.brand b{color:var(--green)}
+.brand:hover{color:var(--navy)}
+.switch{margin-inline-start:auto;font-size:15px;font-weight:700;color:var(--navy);text-decoration:none;border-bottom:1px solid var(--navy);padding-bottom:2px;line-height:1.4}
+.switch:hover{color:var(--blue);border-color:var(--blue)}
+.head{padding-block:52px 30px}
+.rule-accent{display:block;width:56px;height:3px;background:var(--green);margin-bottom:20px}
+.kicker{font-size:14.5px;color:var(--blue);font-weight:700;margin-bottom:10px}
+.head h1{font-size:clamp(27px,4.4vw,42px);line-height:1.4;max-width:30ch}
+[lang="en"] .head h1{line-height:1.2;letter-spacing:-.01em}
+.meta{margin:18px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:4px 26px;font-size:15px;color:var(--muted)}
+.meta b{color:var(--ink)}
+.lede{margin-top:22px;max-width:66ch;font-size:18px;line-height:1.9;color:var(--ink)}
+[lang="en"] .lede{font-size:17.5px;line-height:1.65}
+.toc{border-top:2px solid var(--navy);padding-top:16px;margin-bottom:34px}
+.toc h2{font-size:15px;color:var(--muted);margin-bottom:6px}
+.toc ol{list-style:none;columns:2 250px;column-gap:44px;margin:0}
+.toc li{break-inside:avoid;border-bottom:1px solid var(--rule)}
+.toc a{display:block;padding:9px 0;color:var(--ink);text-decoration:none;font-size:16px;line-height:1.6}
+.toc a:hover{color:var(--blue)}
+.sec{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;border-top:1px solid var(--rule);padding-block:30px}
+.sec h2{font-size:20px;line-height:1.55}
+[lang="en"] .sec h2{font-size:19px;line-height:1.35}
+.body{max-width:70ch}
+.body>:last-child{margin-bottom:0}
+.rows{margin:0 0 .85em}
+.rows>div{border-top:1px solid var(--rule);padding-block:14px}
+.rows>div:first-child{border-top:0;padding-top:2px}
+.rows>div:last-child{padding-bottom:0}
+.rows dt{color:var(--ink);font-weight:700;margin-bottom:3px}
+.rows dd{margin:0}
+.rows dd>:last-child{margin-bottom:0}
+.list{list-style:none}
+.list li{position:relative;padding-inline-start:22px;margin-bottom:.5em}
+.list li::before{content:"";position:absolute;inset-inline-start:2px;top:.82em;width:7px;height:7px;background:var(--green)}
+[lang="en"] .list li::before{top:.66em}
+.list li:last-child{margin-bottom:0}
+.list+p,.rows+p{margin-top:.85em}
+.steps{list-style:none;counter-reset:step;margin:0 0 .85em}
+.steps>li{counter-increment:step;display:grid;grid-template-columns:38px minmax(0,1fr);border-top:1px solid var(--rule);padding-block:16px}
+.steps>li:first-child{border-top:0;padding-top:2px}
+.steps>li::before{content:counter(step);color:var(--navy);font-weight:700;font-size:21px;line-height:1.45}
+.steps b{display:block;margin-bottom:2px}
+.cta{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;font-weight:700;font-size:16px;line-height:1.5;padding:11px 20px;border-radius:6px;margin-top:6px}
+.cta:hover{background:var(--blue);color:#fff}
+.note{background:var(--wash);border-inline-start:3px solid var(--green);padding:14px 18px;color:var(--ink);margin:0 0 .85em}
+.path{white-space:nowrap;color:var(--ink);font-weight:700}
+.en{border-top:3px solid var(--navy);margin-top:34px;background:linear-gradient(var(--wash),#fff 300px)}
+.en .bar-en{display:flex;align-items:center;gap:14px;min-height:56px;border-bottom:1px solid var(--rule)}
+.en .bar-en span{font-size:14.5px;color:var(--muted);font-weight:700}
+.en .switch{font-size:15px}
+.foot{border-top:1px solid var(--rule);margin-top:26px;padding-block:28px 40px;color:var(--muted);font-size:15px;line-height:1.7}
+.foot-in{display:grid;grid-template-columns:minmax(0,1fr);gap:10px 48px}
+.foot nav{display:flex;flex-wrap:wrap;gap:6px 24px}
+.foot [lang="en"]{font-size:inherit;line-height:inherit}
+.foot a{color:var(--ink);text-decoration:none}
+.foot a:hover{color:var(--blue);text-decoration:underline}
+.foot a[aria-current="page"]{color:var(--blue);font-weight:700}
+.foot .copy{margin:8px 0 0}
+@media (min-width:880px){
+  .sec{grid-template-columns:236px minmax(0,1fr);gap:52px;padding-block:34px}
+  .rows>div{display:grid;grid-template-columns:190px minmax(0,1fr);gap:24px}
+  .rows dt{margin-bottom:0}
+  .foot-in{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .foot .copy{grid-column:1/-1}
+}
+@media (max-width:560px){
+  body{font-size:16.5px}
+  .head{padding-block:34px 22px}
+  .lede{font-size:17px}
+  .sec{padding-block:24px}
+  .brand{font-size:22px}
+  .brand img{height:36px}
+}
+@media print{
+  .switch,.toc,.foot nav{display:none}
+  body{font-size:11.5pt}
+  .en{background:none}
+  a{color:inherit}
+}
+</style>
+</head>
+<body id="top">
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="قلم — الصفحة الرئيسية">
+      <img src="../brand/qalam-logo.png" alt="" width="24" height="40">
+      <span>قلم<b>.</b></span>
+    </a>
+    <a class="switch" href="#en" hreflang="en" lang="en">English</a>
+  </div>
+</header>
+
+<main>
+<article id="ar" lang="ar" dir="rtl">
+  <div class="wrap">
+    <header class="head">
+      <span class="rule-accent" aria-hidden="true"></span>
+      <p class="kicker">قلم · AcS</p>
+      <h1>الدعم والمساعدة</h1>
+      <ul class="meta">
+        <li>التطبيق: <b>قلم</b></li>
+        <li>المطوّر: <b>AcS</b></li>
+        <li>البريد: <a class="ltr" href="mailto:info@qalamsy.com">info@qalamsy.com</a></li>
+      </ul>
+      <p class="lede">في تطبيق «قلم» يتابع أولياء الأمور والطلاب الحضور والعلامات والسلوك والواجبات التي تسجّلها مدارسهم، ويتلقى أولياء الأمور فيه إشعارات المدرسة. تجد هنا طريقة التواصل مع فريق قلم، وأجوبة الأسئلة الأكثر تكراراً.</p>
+    </header>
+
+    <section class="sec" id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">التواصل مع فريق قلم</h2>
+      <div class="body">
+        <dl class="rows">
+          <div><dt>البريد الإلكتروني</dt><dd><a class="ltr" href="mailto:info@qalamsy.com">info@qalamsy.com</a></dd></div>
+          <div><dt>أوقات العمل</dt><dd>من الأحد إلى الخميس، من 9 صباحاً حتى 5 مساءً بتوقيت دمشق. نسعى للرد خلال يوم عمل واحد.</dd></div>
+          <div><dt>البلد</dt><dd>سورية</dd></div>
+        </dl>
+        <p>اذكر في رسالتك اسم المدرسة ونوع الحساب ونوع هاتفك، ليصلك الرد أسرع. لا ترسل كلمة المرور في أي رسالة؛ فريقنا لا يطلبها أبداً.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="account" aria-labelledby="account-h">
+      <h2 id="account-h">الحصول على حساب في التطبيق</h2>
+      <div class="body">
+        <p>تنشئ المدرسة حسابات أولياء الأمور والطلاب، ولا يمكن إنشاء حساب من داخل التطبيق. تسلّمك إدارة المدرسة بريد الدخول وكلمة مرور مؤقتة، وعند أول دخول يطلب التطبيق تعيين كلمة مرور خاصة لا تقل عن ثماني خانات.</p>
+        <p>حسابات الطلاب متاحة من الصف السابع فما فوق، ويتابع ولي الأمر الأبناء الأصغر من حسابه.</p>
+        <p>إذا دخلت ولم تظهر بيانات أبنائك، فحسابك لم يُربط بسجلاتهم بعد. اطلب من إدارة المدرسة ربطه، ثم اضغط «تحديث الآن».</p>
+      </div>
+    </section>
+
+    <section class="sec" id="password" aria-labelledby="password-h">
+      <h2 id="password-h">نسيان كلمة المرور وتغييرها</h2>
+      <div class="body">
+        <p>إذا نسيت كلمة المرور فتواصل مع إدارة المدرسة لتمنحك كلمة مرور مؤقتة، ثم اختر كلمتك الجديدة عند الدخول.</p>
+        <p>لتغيير كلمة المرور وأنت مسجّل الدخول: <span class="path">«حسابي» ← «تغيير كلمة المرور»</span>.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="notifications" aria-labelledby="notifications-h">
+      <h2 id="notifications-h">إشعارات المدرسة</h2>
+      <div class="body">
+        <p>تصل إشعارات المدرسة إلى ولي الأمر في تبويب «الوارد» داخل التطبيق. يظهر غير المقروء منها بنقطة، ويمكن تعليمها جميعاً مقروءة.</p>
+        <dl class="rows">
+          <div><dt>الغياب والتأخر</dt><dd>يصل الإشعار تلقائياً حين تسجّل المدرسة غياب الطالب أو تأخره.</dd></div>
+          <div><dt>الإعلانات والتذكيرات</dt><dd>الإعلانات العامة وتذكيرات الأقساط والامتحانات ترسلها إدارة المدرسة من لوحتها حين تقرر ذلك.</dd></div>
+          <div><dt>آيفون وأندرويد</dt><dd>تُعرض الإشعارات داخل التطبيق، ويظهر الجديد منها عند فتحه.</dd></div>
+        </dl>
+        <p>الرد على الإشعارات غير متاح في التطبيق. للاستفسار عن مضمون إشعار، تواصل مع المدرسة مباشرة.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="fees" aria-labelledby="fees-h">
+      <h2 id="fees-h">الأقساط المدرسية</h2>
+      <div class="body">
+        <p>يعرض التطبيق لولي الأمر القسط المطلوب لكل فصل، وما دُفع منه وما تبقّى، وسجلّ الدفعات كما تسجّله المدرسة.</p>
+        <p>يُدفع القسط للمدرسة مباشرة خارج التطبيق، بتحويله عبر شام كاش إلى حسابها المعتمد، وتجد الخطوات في التطبيق تحت «طريقة تسديد القسط». بعد التحويل أبلغ المدرسة برقم العملية لتسجّل الدفعة، وعندها تظهر في السجل. التطبيق لا يستقبل الدفعات أو بيانات البطاقات والحسابات المصرفية والمحافظ الإلكترونية.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="corrections" aria-labelledby="corrections-h">
+      <h2 id="corrections-h">تصحيح بيانات خاطئة أو ناقصة</h2>
+      <div class="body">
+        <p>كادر المدرسة هو من يُدخل الحضور والعلامات والسلوك والواجبات والأقساط. إذا لاحظت خطأً في أي منها، فراجع إدارة المدرسة لتصحيحه، ويظهر التصحيح في التطبيق بعد حفظه.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="staff" aria-labelledby="staff-h">
+      <h2 id="staff-h">حسابات كادر المدرسة</h2>
+      <div class="body">
+        <p>تطبيق الهاتف مخصص لأولياء الأمور والطلاب. يعمل المديرون والمعلمون والمشرفون من لوحة «قلم» على الويب، ورابط الدخول إليها: <a href="../login">تسجيل الدخول إلى اللوحة</a>.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="schools" aria-labelledby="schools-h">
+      <h2 id="schools-h">انضمام المدارس إلى قلم</h2>
+      <div class="body">
+        <p>إذا كنت تدير مدرسة أو معهداً خاصاً وتريد استخدام «قلم»، فقدّم طلب الانضمام من <a href="../signup">صفحة تسجيل المدارس</a>، ويراجعه فريقنا ثم يتواصل معك.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="devices" aria-labelledby="devices-h">
+      <h2 id="devices-h">الأجهزة المدعومة</h2>
+      <div class="body">
+        <p>يعمل التطبيق على هواتف أندرويد بالإصدار 7.0 فما فوق، وعلى آيفون بنظام iOS 13 فما فوق. واجهته بالعربية، ويحتاج اتصالاً بالإنترنت لجلب البيانات الجديدة.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="privacy" aria-labelledby="privacy-h">
+      <h2 id="privacy-h">الخصوصية وحذف الحساب</h2>
+      <div class="body">
+        <ul class="list">
+          <li><a href="../privacy/">سياسة الخصوصية</a>: البيانات التي نعالجها، ومزوّدو الخدمة، ومدة الحفظ.</li>
+          <li><a href="../delete-account/">طلب حذف الحساب</a>: خطوات الطلب، وما يُحذف، وما قد يبقى لدى المدرسة.</li>
+          <li><a href="../terms">شروط الاستخدام</a> الخاصة بالمنصة.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</article>
+
+<article id="en" class="en" lang="en" dir="ltr">
+  <div class="wrap">
+    <div class="bar-en">
+      <span>English version</span>
+      <a class="switch" href="#top" hreflang="ar"><span lang="ar" dir="rtl">العربية</span></a>
+    </div>
+    <header class="head">
+      <span class="rule-accent" aria-hidden="true"></span>
+      <p class="kicker">Qalam · AcS</p>
+      <h1>Support and help</h1>
+      <ul class="meta">
+        <li>App: <b>Qalam (<span lang="ar" dir="rtl">قلم</span>)</b></li>
+        <li>Developer: <b>AcS</b></li>
+        <li>Email: <a href="mailto:info@qalamsy.com">info@qalamsy.com</a></li>
+      </ul>
+      <p class="lede">In the Qalam app, parents and students follow the attendance, grades, behavior and homework that their schools record, and parents also receive the school’s notifications. This page explains how to reach the Qalam team and answers the questions we are asked most often.</p>
+    </header>
+
+    <section class="sec" id="en-contact" aria-labelledby="en-contact-h">
+      <h2 id="en-contact-h">Contacting the Qalam team</h2>
+      <div class="body">
+        <dl class="rows">
+          <div><dt>Email</dt><dd><a href="mailto:info@qalamsy.com">info@qalamsy.com</a></dd></div>
+          <div><dt>Working hours</dt><dd>Sunday to Thursday, 9 am to 5 pm Damascus time. We aim to reply within one working day.</dd></div>
+          <div><dt>Country</dt><dd>Syria</dd></div>
+        </dl>
+        <p>Mention your school’s name, your account type and your phone model so we can reply faster. Never send your password in a message; our team will never ask for it.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="en-account" aria-labelledby="en-account-h">
+      <h2 id="en-account-h">Getting an account</h2>
+      <div class="body">
+        <p>Parent and student accounts are created by the school, and accounts cannot be created inside the app. The school administration gives you a sign-in email and a temporary password, and at first sign-in the app asks you to set your own password of at least eight characters.</p>
+        <p>Student accounts are available from grade 7 upward. Parents follow younger children through their own account.</p>
+        <p>If you sign in and your children’s data does not appear, your account has not been linked to their records yet. Ask the school administration to link it, then tap <span lang="ar" dir="rtl">«تحديث الآن»</span> (Refresh now).</p>
+      </div>
+    </section>
+
+    <section class="sec" id="en-password" aria-labelledby="en-password-h">
+      <h2 id="en-password-h">Forgotten or changed passwords</h2>
+      <div class="body">
+        <p>If you forget your password, contact the school administration for a temporary password, then choose your new password when you sign in.</p>
+        <p>To change your password while signed in: <span lang="ar" dir="rtl">حسابي</span> (My account) → <span lang="ar" dir="rtl">تغيير كلمة المرور</span> (Change password).</p>
+      </div>
+    </section>
+
+    <section class="sec" id="en-notifications" aria-labelledby="en-notifications-h">
+      <h2 id="en-notifications-h">School notifications</h2>
+      <div class="body">
+        <p>School notifications reach parents in the <span lang="ar" dir="rtl">«الوارد»</span> (Inbox) tab inside the app. Unread items are marked with a dot, and all of them can be marked as read at once.</p>
+        <dl class="rows">
+          <div><dt>Absence and lateness</dt><dd>The notice arrives automatically when the school records a student as absent or late.</dd></div>
+          <div><dt>Announcements and reminders</dt><dd>General announcements and reminders about fees and exams are sent by the school administration from its dashboard when it chooses to.</dd></div>
+          <div><dt>iPhone and Android</dt><dd>Notifications are shown inside the app, and new ones appear when you open it.</dd></div>
+        </dl>
+        <p>Replying to notifications is not available in the app. For questions about a notification’s content, contact the school directly.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="en-fees" aria-labelledby="en-fees-h">
+      <h2 id="en-fees-h">School fees</h2>
+      <div class="body">
+        <p>The app shows parents the fee due for each term, how much has been paid and what remains, and the payment history as the school records it.</p>
+        <p>Fees are paid to the school directly, outside the app, by transferring the amount with Sham Cash to the school’s approved account; the steps are under <span lang="ar" dir="rtl">«طريقة تسديد القسط»</span> (How to pay the fee) in the app. After transferring, give the school the transaction number so it can record the payment; it then appears in the history. The app does not take payments or card, bank account or e-wallet details.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="en-corrections" aria-labelledby="en-corrections-h">
+      <h2 id="en-corrections-h">Correcting wrong or missing data</h2>
+      <div class="body">
+        <p>School staff enter attendance, grades, behavior, homework and fees. If you notice a mistake in any of them, ask the school administration to correct it; the correction shows in the app once it is saved.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="en-staff" aria-labelledby="en-staff-h">
+      <h2 id="en-staff-h">School staff accounts</h2>
+      <div class="body">
+        <p>The mobile app is for parents and students. Principals, teachers and supervisors work in the Qalam web dashboard, which they reach from the <a href="../login">dashboard sign-in page</a>.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="en-schools" aria-labelledby="en-schools-h">
+      <h2 id="en-schools-h">Schools joining Qalam</h2>
+      <div class="body">
+        <p>If you run a private school or institute and want to use Qalam, apply on the <a href="../signup">school registration page</a>. Our team reviews the application and then contacts you.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="en-devices" aria-labelledby="en-devices-h">
+      <h2 id="en-devices-h">Supported devices</h2>
+      <div class="body">
+        <p>The app runs on Android phones with version 7.0 or later and on iPhone with iOS 13 or later. Its interface is in Arabic, and it needs an internet connection to fetch new data.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="en-privacy" aria-labelledby="en-privacy-h">
+      <h2 id="en-privacy-h">Privacy and account deletion</h2>
+      <div class="body">
+        <ul class="list">
+          <li><a href="../privacy/">Privacy Policy</a>: the data we process, our service providers, and how long data is kept.</li>
+          <li><a href="../delete-account/">Account deletion request</a>: how to ask, what is deleted, and what the school may keep.</li>
+          <li>The platform’s <a href="../terms">Terms of use</a>.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</article>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <nav aria-label="روابط قلم">
+      <a href="../privacy/">سياسة الخصوصية</a>
+      <a href="../support/" aria-current="page">الدعم والمساعدة</a>
+      <a href="../delete-account/">حذف الحساب</a>
+      <a href="../terms">شروط الاستخدام</a>
+      <a href="../">موقع قلم</a>
+    </nav>
+    <nav aria-label="Qalam links" lang="en" dir="ltr">
+      <a href="../privacy/">Privacy Policy</a>
+      <a href="../support/" aria-current="page">Support</a>
+      <a href="../delete-account/">Account deletion</a>
+      <a href="../terms">Terms of use</a>
+      <a href="../">Qalam website</a>
+    </nav>
+    <p class="copy"><span class="ltr">© 2026 AcS</span></p>
+  </div>
+</footer>
+
+</body>
+</html>
